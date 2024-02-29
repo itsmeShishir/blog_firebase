@@ -52,7 +52,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                             border: OutlineInputBorder(
                                 borderRadius:
                                     BorderRadius.all(Radius.circular(20))),
-                            prefixIcon: Icon(Icons.mail),
+                            prefixIcon: Icon(Icons.people),
                             labelText: 'Enter your User Name'),
                       ),
                       const SizedBox(
@@ -89,7 +89,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                             border: OutlineInputBorder(
                                 borderRadius:
                                     BorderRadius.all(Radius.circular(20))),
-                            prefixIcon: Icon(Icons.mail),
+                            prefixIcon: Icon(Icons.password),
                             labelText: 'Enter your Password'),
                       ),
                       const SizedBox(
@@ -98,10 +98,11 @@ class _RegisterScreenState extends State<RegisterScreen> {
                       Center(
                         child: ElevatedButton(
                           style: ElevatedButton.styleFrom(
-                            primary: Colors.green,
+                            backgroundColor: Colors.black,
+                            fixedSize: const Size(200, 75)
                           ),
                           onPressed: () {
-                            Navigator.pushNamed(context, "/home");
+                            Navigator.pushNamed(context, "/login");
                           },
                           child: const Text(
                             "Register",

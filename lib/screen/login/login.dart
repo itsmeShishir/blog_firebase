@@ -86,7 +86,7 @@ class _LoginScreenState extends State<LoginScreen> {
                               border: OutlineInputBorder(
                                   borderRadius:
                                       BorderRadius.all(Radius.circular(20))),
-                              prefixIcon: Icon(Icons.mail),
+                              prefixIcon: Icon(Icons.password),
                               labelText: 'Enter your Password'),
                         ),
                         const SizedBox(
